@@ -1,0 +1,31 @@
+1. Display FirstName According to Ascending order
+Ans = SELECT * FROM employe ORDER BY FIRST_NAME ASC 
+
+2. Display User Detail According to Lower to Higher Salary
+Ans =SELECT SALARY FROM employe ORDER BY SALARY ASC
+
+3. Display Firstname Whose Firstname Starts with J.
+Ans =SELECT FIRST_NAME FROM employe WHERE FIRST_NAME LIKE 'J%'; 
+
+4. Display All Employee Whose Designation is CLERK
+Ans =select * from employe where DESIGNATION = 'CLERK';
+
+5. Remove Records which is belong from HR ANALYST category
+Ans =DELETE FROM employe WHERE DESIGNATION = 'HR ANALYST';
+
+6. Display User Detail Whose Department No. is 40
+Ans = select * from employe where DEPTNO=40;
+
+7. Display Max salary from Table
+Ans =SELECT MAX(SALARY) FROM employe
+
+8. Display Minimum Salary from Table
+Ans = SELECT MIN(SALARY) FROM employe
+
+9. Display Total Salary of Employee
+Ans =SELECT SUM(SALARY) FROM employe
+
+10.Find Second Highest Salary From Table
+Ans = SELECT salary FROM (SELECT salary FROM employe ORDER BY salary DESC LIMIT 2) AS employe ORDER BY salary LIMIT 1;
+
+

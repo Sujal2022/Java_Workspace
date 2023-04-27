@@ -1,4 +1,5 @@
-package Module_2_1;
+package Module_2_2;
+
 class Rectangle {
     private double length;
     private double breadth;
@@ -17,10 +18,14 @@ class Rectangle {
     }
 }
 
-class Square extends Rectangle {
-    public Square(double side) {
+class Square extends Rectangle 
+{
+    public Square(double side) 
+    {
         super(side, side);
     }
+
+	
 }
 public class Rectangle_program 
 {
